@@ -1,0 +1,28 @@
+meta {
+  title: "Orphan ways";
+  version: "2016-27-07";
+  description: "Highlights orphan ways";
+  author: "manuela_butuc";
+}
+
+
+/*****************************/
+/* highlights untagged ways  */
+/*****************************/
+
+way!:tagged{
+	 width: 4;
+    color: red;
+	 dashes: 17;
+	 dashes-background-color: yellow;
+}
+
+/*************************************************/
+/* override for ways that are part of a relation */
+/*************************************************/
+
+relation way{
+	width: +2;
+	color: gray;
+	opacity: 0.9;
+}
